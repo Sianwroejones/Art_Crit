@@ -5,11 +5,12 @@
 
 <h1>Add Art Post</h1>
 <br/><br/>
-<form method="POST">
-{% csrf_token %}
-{{ form.as_p }}
-<button class="btn btn-secondary">Share</button>
-
+<div class="mb-3">
+    <form method="POST">
+       {% csrf_token %}
+       {{ form.as_p }}
+       <button class="btn btn-secondary">Share</button>
+</div>
 
 </form>
 
