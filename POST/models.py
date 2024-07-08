@@ -11,7 +11,7 @@ class Post(models.Model):
    modified = models.DateTimeField(auto_now=True)
 
    def __str__(self):
-       return self.description + '|' + self.author
+       return self.description + '|' + str(self.author)
 
 #class Comment(models.Model):
 #   post = models.ForeignKey(Post, on_delete=models.CASCADE)
