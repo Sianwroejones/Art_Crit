@@ -2,7 +2,7 @@
 {% block title %}Update Your Artwork Post{% endblock %}
 {% block content %}
 
-
+{% if user.is_authenticated %}
 <h1>Update Art Post</h1>
 <br/><br/>
 <div class="mb-3">
@@ -11,6 +11,11 @@
        {{ form.as_p }}
        <button class="btn btn-secondary">Update</button>
 </div>
+{% else %}
+
+Please login to continue...
+
+{% endif %}
 
 </form>
 

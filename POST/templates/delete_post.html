@@ -2,21 +2,25 @@
 {% block title %}Delete Your Artwork Post{% endblock %}
 {% block content %}
 
+{% if user.is_authenticated %}
+       <h1>Delete Art Post</h1>
+       <br/><br/>
+       <h3>Delete: {{ post.title }}</h3>
 
-<h1>Delete Art Post</h1>
-<br/><br/>
-<h3>Delete: {{ post.title }}</h3>
+       <br/>
+       <div class="mb-3">
+       <form method="POST">
+              {% csrf_token %}
+       <br/>       
+              <button class="btn btn-secondary">Delete Post!</button>
+       </div>
 
-<br/>
-<div class="mb-3">
-    <form method="POST">
-       {% csrf_token %}
-<br/>       
-       <button class="btn btn-secondary">Delete Post!</button>
-</div>
+       </form>
 
-</form>
+{% else %}      
 
+Please login to continue...
 
+{% endif %}
 
 {% endblock %}

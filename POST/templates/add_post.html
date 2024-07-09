@@ -2,7 +2,7 @@
 {% block title %}Share Your Artwork{% endblock %}
 {% block content %}
 
-
+{% if user.is_authenticated %}
 <h1>Add Art Post</h1>
 <br/><br/>
 <div class="mb-3">
@@ -14,6 +14,11 @@
 
 </form>
 
+{% else %}
+
+Please login to continue ...
+
+{% endif %}
 
 
 {% endblock %}
