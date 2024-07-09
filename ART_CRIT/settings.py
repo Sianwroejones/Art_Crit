@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'POST',
     'cloudinary_storage', 
     'cloudinary',
+    'SIGNUP',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net']
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
