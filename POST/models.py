@@ -5,6 +5,16 @@ from datetime import datetime, date
 
 # Create your models here.
 
+class Medium(models.Model):
+    type = models.CharField(max_length=255, default='Untitled')
+
+    def __str__(self):
+       return self.type 
+
+    def get_absolute_url(self): 
+       #return reverse('details', args=(str(self.id)))  
+       return reverse('home') 
+
 class Post(models.Model):
    #image = models.ImageField()
    title = models.CharField(max_length=255, default='Untitled')
@@ -14,6 +24,7 @@ class Post(models.Model):
    #created = models.DateTimeField(auto_now_add=True)
    #modified = models.DateTimeField(auto_now=True)
    post_date = models.DateField(auto_now_add=True)
+   medium = models.CharField(max_length=255, default='uncategorised')
 
    def __str__(self):
        return self.description + '|' + str(self.author)
