@@ -22,7 +22,7 @@
         </small>
         <br/>
         
-    {{ post.description|slice:":150" }} </li>
+    {{ post.description|slice:":150"|safe }} </li>
 {% endfor%}
 </ul>
 
