@@ -3,9 +3,33 @@
 {% block content %}
 
 
-<h1>Medium</h1>
+<h1>{{ meds }}</h1>
 
-{{ meds }}
+<ul>
+{% for post in medium_posts %}
+<li><a href="{% url 'details' post.pk %}">
+    {{ post.title }}</a> 
+    
+    -  {{ post.medium }}
+    - {{ post.author.first_name }}
+    {{ post.author.last_name }}  - 
+    {{ post.post_date }} 
+    <small>
+        {% if user.is_authenticated %}
+        - <a href="{% url 'update_post' post.pk %}">(Edit)</a>
+
+        <a href="{% url 'delete_post' post.pk %}">(Delete)</a>  
+        {% endif %}
+        
+    </small>
+    <br/>
+    
+{{ post.description|slice:":150"|safe }} </li>
+
+{% endfor %}
+</ul>
+
+medium_posts
 
 
 

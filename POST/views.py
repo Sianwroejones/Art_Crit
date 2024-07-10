@@ -44,5 +44,5 @@ class DeletePostView(DeleteView):
     success_url = reverse_lazy('home')
 
 def MediumView(request, meds):
-
-    return render(request, 'medium.html', {'meds':meds})
+    medium_posts = Post.objects.filter(medium=meds)
+    return render(request, 'medium.html', {'meds':meds, 'medium_posts':medium_posts})
