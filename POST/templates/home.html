@@ -8,7 +8,9 @@
 <ul>
 {% for post in object_list %}
     <li><a href="{% url 'details' post.pk %}">
-        {{ post.title }}</a> - 
+        {{ post.title }}</a> 
+        
+        -  {{ post.medium }}
         {{ post.author.first_name }}
         {{ post.author.last_name }}  - 
         {{ post.post_date }} 
