@@ -46,3 +46,9 @@ class DeletePostView(DeleteView):
 def MediumView(request, meds):
     medium_posts = Post.objects.filter(medium=meds.replace('-', ' '))
     return render(request, 'medium.html', {'meds':meds, 'medium_posts':medium_posts})
+
+def get_context_data(self, *args, **kwargs):
+    meds_menu = Medium.objects.all()   
+    context = super(HomeView, self).get_context_data(*args, **kwargs)
+    context["meds_menu"] = meds_menu
+    return context
