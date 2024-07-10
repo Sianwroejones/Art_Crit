@@ -36,7 +36,7 @@ class UpdatePostView(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
-    #fields = ['title', 'title_tag', 'description']
+    #fields = ['title', 'title_tag', 'description', 'medium',]
 
 class DeletePostView(DeleteView):
     model = Post
@@ -44,5 +44,5 @@ class DeletePostView(DeleteView):
     success_url = reverse_lazy('home')
 
 def MediumView(request, meds):
-    medium_posts = Post.objects.filter(medium=meds)
+    medium_posts = Post.objects.filter(medium=meds.replace('-', ' '))
     return render(request, 'medium.html', {'meds':meds, 'medium_posts':medium_posts})

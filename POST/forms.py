@@ -32,6 +32,6 @@ class EditForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Type title of artwork here'}),
             'title_tag': forms.TextInput(attrs={'class': 'form-control'}),
-            #'author': forms.Select(attrs={'class': 'form-control'}),
+            #'medium': forms.Select(attrs={'class': 'form-control'}),
             'description': forms.Textarea(attrs={'class': 'form-control'}),
         }       

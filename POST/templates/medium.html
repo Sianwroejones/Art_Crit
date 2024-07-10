@@ -2,6 +2,7 @@
 
 {% block content %}
 
+{% if medium_posts %}
 
 <h1>{{ meds }}</h1>
 
@@ -10,7 +11,7 @@
 <li><a href="{% url 'details' post.pk %}">
     {{ post.title }}</a> 
     
-    -  {{ post.medium }}
+    
     - {{ post.author.first_name }}
     {{ post.author.last_name }}  - 
     {{ post.post_date }} 
@@ -29,8 +30,9 @@
 {% endfor %}
 </ul>
 
-medium_posts
+{% else %}
+   <h2>No entries yet...</h2>
 
-
+{% endif %}
 
 {% endblock %}
