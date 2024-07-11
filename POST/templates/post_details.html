@@ -29,6 +29,28 @@ By: {{ post.author.first_name }}
 {{ post.description|safe }}
 
 <br/><br/>
+
+<h2>Feedback...</h2>
+<br/>
+
+{% if not post.comments.all %}
+      No Feedback Yet...<a href="#">Post Your Feedback Here</a>
+{% else %}  
+      {% for comment in post.comments.all %}
+        <strong>
+        {{ comment.name }} - 
+        {{ comment.date_added }}
+    </strong>
+    
+    <br/>
+    {{ comment.body }}
+    <br/><br/>
+    <hr>
+    {% endfor %}
+
+{% endif %}
+
+<br/><br/>
 <a href="{% url 'home' %}" class="btn btn-secondary"></button>
 Back</a>
 
