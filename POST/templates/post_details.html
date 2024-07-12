@@ -34,8 +34,11 @@ By: {{ post.author.first_name }}
 <br/>
 
 {% if not post.comments.all %}
-      No Feedback Yet...<a href="#">Post Your Feedback Here</a>
+      No Feedback Yet...
 {% else %}  
+<a href="{% url 'add_comment' post.pk %}">Add Feedback</a>
+<br/><br/>
+
       {% for comment in post.comments.all %}
         <strong>
         {{ comment.name }} - 
@@ -51,6 +54,11 @@ By: {{ post.author.first_name }}
 {% endif %}
 
 <br/><br/>
+
+<a href="{% url 'add_comment' post.pk %}">Add Feedback</a>
+
+<a href="#top" id="back-to-top">Back to Top</a>
+
 <a href="{% url 'home' %}" class="btn btn-secondary"></button>
 Back</a>
 

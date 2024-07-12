@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post, Medium
+from .models import Post, Medium, Comment
 
 #choices = [('Painting', 'Painting'), ('Print', 'Print'), ('Drawing', 'Drawing'),
 #('Ceramics', 'Ceramics'), ('Mixed Media', 'Mixed Media'), ('Sculpture', 'Sculpture'), 
@@ -35,4 +35,14 @@ class EditForm(forms.ModelForm):
             'title_tag': forms.TextInput(attrs={'class': 'form-control'}),
             #'medium': forms.Select(attrs={'class': 'form-control'}),
             'description': forms.Textarea(attrs={'class': 'form-control'}),
+        }       
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ('name', 'body')
+
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'body': forms.Textarea(attrs={'class': 'form-control'}),
         }       

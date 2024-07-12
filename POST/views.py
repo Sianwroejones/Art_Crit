@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Post, Medium
-from .forms import PostForm, EditForm
+from .models import Post, Medium, Comment 
+from .forms import PostForm, EditForm, CommentForm
 from django.urls import reverse_lazy
 # Create your views here.
 
@@ -24,6 +24,19 @@ class AddPostView(CreateView):
     template_name = 'add_post.html'
     #fields = '__all__'
     #fields = ('title', 'description',)
+
+class AddCommentView(CreateView):
+    model = Comment
+    form_class = CommentForm
+    template_name = 'add_comment.html'
+    #fields = '__all__'
+    #fields = ('title', 'description',)
+
+    def form_valid(self, form):
+        form.instance.post_id = self.kwargs['pk']
+        return super().form_valid(form)
+
+    success_url = reverse_lazy('home')
 
 class AddMediumView(CreateView):
         model = Medium
