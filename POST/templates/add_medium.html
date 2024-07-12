@@ -5,7 +5,7 @@
 {% if user.is_authenticated %}
 <h1>Add Art Medium...</h1>
 <br/><br/>
-<div class="mb-3">
+<!--<div class="mb-3">
     <form method="POST">
        {% csrf_token %}
        {{ form.as_p }}
@@ -13,6 +13,24 @@
 </div>
 
 </form>
+-->
+
+
+<div class="mb-3">
+    <form method="POST">
+       {% csrf_token %}
+       {{ form.as_p}}
+       <div class="mb-3">
+        <input type="text" class="form-control" name="medium" placeholder="Add Medium"> 
+
+      </div>
+
+      
+        
+      
+       <button class="btn btn-secondary">Add</button>
+</div>
+
 
 {% else %}
 
