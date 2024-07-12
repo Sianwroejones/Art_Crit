@@ -10,7 +10,7 @@
     <li><a href="{% url 'details' post.pk %}">
         {{ post.title }}</a> 
         
-        - <a href="{% url 'medium' post.medium|slugify %}">
+        - <a href="{% url 'medium' post.medium %}">
           {{ post.medium }}</a>
         - {{ post.author.first_name }}
         {{ post.author.last_name }}  - 
@@ -34,6 +34,7 @@
 {% for item in meds_menu %}
 {{ item }}<br/>
 {% endfor %}
+
 
 
 
