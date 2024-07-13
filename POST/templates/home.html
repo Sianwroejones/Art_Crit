@@ -2,40 +2,51 @@
 
 {% block content %}
 
+<main>
+    <div class="col-12 g-0 bg-colour text-center">
+        <div class="row bg-color-exhibiting">
+            <h1>Recently Posted Artwork</h1>
+            <p>ArtCrit Community is a vibrant online platform where artists of all levels come together to share their work and receive constructive feedback. Members can post their artwork, engage in thoughtful discussions, and gain insights from a supportive community of peers and experts. With ArtCrit Community, artists never have to feel stuck again. The platform fosters growth and creativity through collaborative critique, providing the encouragement and guidance needed to refine skills and evolve as an artist. Whether you're a beginner looking for tips or a seasoned artist seeking fresh perspectives, ArtCrit Community is your go-to space for artistic development and inspiration.</p>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            {% for post in object_list %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="post-item">
+                    
+                        <h2>{{ post.title }}</h2>
+                    
+                    
+                    {% if post.header_image %}
+                    <a href="{% url 'details' post.pk %}" class="thumbnail-link">
+                    <img class="thumbnail" src="{{ post.header_image.url }}"></a>
+                    {% endif %}
 
-<h1>Post</h1>
-
-<ul>
-{% for post in object_list %}
-    <li><a href="{% url 'details' post.pk %}">
-        {{ post.title }}</a> 
-        
-        - <a href="{% url 'medium' post.medium %}">
-          {{ post.medium }}</a>
-        - {{ post.author.first_name }}
-        {{ post.author.last_name }}  - 
-        {{ post.post_date }} 
-        <small>
-            {% if user.is_authenticated %}
-            {% if user.id == post.author.id %}
-                - <a href="{% url 'update_post' post.pk %}">(Edit)</a>
-
-                <a href="{% url 'delete_post' post.pk %}">(Delete)</a>  
-                {% endif %}
-                {% endif %}
-            
-        </small>
-        <br/>
-        
-    {{ post.description|slice:":150"|safe }} </li>
-{% endfor%}
-</ul>
-
-{% for item in meds_menu %}
-{{ item }}<br/>
-{% endfor %}
-
-
-
+                    <p>
+                        <a href="{% url 'medium' post.medium %}">
+                            <button type="button" class="btn btn-light">{{ post.medium }}</button>
+                        </a> 
+                        - {{ post.author.first_name }} {{ post.author.last_name }} 
+                        - {{ post.post_date }}
+                    </p>
+                
+                    <small>
+                        {% if user.is_authenticated %}
+                        {% if user.id == post.author.id %}
+                        - <a href="{% url 'update_post' post.pk %}">(Edit)</a>
+                        <a href="{% url 'delete_post' post.pk %}">(Delete)</a>
+                        {% endif %}
+                        {% endif %}
+                    </small>
+                    
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
 
 {% endblock %}
+
+
