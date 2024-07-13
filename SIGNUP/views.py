@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from .forms import SignUpForm
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib import messages
 
 
 # Create your views here.

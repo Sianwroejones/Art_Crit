@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, RedirectView
 from .models import Post, Medium, Comment 
 from .forms import PostForm, EditForm, CommentForm
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth import logout
+
 
 # Create your views here.
 
@@ -98,10 +100,12 @@ def get_context_data(self, *args, **kwargs):
             return context
         
 
-class DeletePostView(DeleteView):
+class DeletePostView(SuccessMessageMixin, DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
+    success_message = "You have successfully deleted your post."
+
 
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, "Your post was successfully deleted!")
@@ -117,3 +121,11 @@ def MediumView(request, meds):
     medium_posts = Post.objects.filter(medium=meds.replace('-', ' '))
     return render(request, 'medium.html', {'meds':meds.title(), 'medium_posts':medium_posts})
 
+class CustomLogoutView(SuccessMessageMixin, RedirectView):
+    url = reverse_lazy('login')
+    success_message = "You have been successfully logged out."
+
+    def get(self, request, *args, **kwargs):
+        logout(request)
+        messages.success(self.request, self.success_message)
+        return super().get(request, *args, **kwargs)
