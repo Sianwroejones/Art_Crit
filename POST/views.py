@@ -1,8 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Medium, Comment 
 from .forms import PostForm, EditForm, CommentForm
 from django.urls import reverse_lazy
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
+
 # Create your views here.
 
 #def home(request):
@@ -31,12 +34,14 @@ class PostDetailView(DetailView):
         context["meds_menu"] = meds_menu
         return context
 
-class AddPostView(CreateView):
+class AddPostView(SuccessMessageMixin, CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
     #fields = '__all__'
     #fields = ('title', 'description',)
+    success_message = "Your post was successfully created!"
+    success_url = reverse_lazy('home') 
 
     def get_context_data(self, *args, **kwargs):
         meds_menu = Medium.objects.all()   
@@ -44,12 +49,14 @@ class AddPostView(CreateView):
         context["meds_menu"] = meds_menu
         return context
 
-class AddCommentView(CreateView):
+class AddCommentView(SuccessMessageMixin, CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
     #fields = '__all__'
     #fields = ('title', 'description',)
+    success_message = "Your comment was successfully created!"
+    success_url = reverse_lazy('home')
 
     def get_context_data(self, *args, **kwargs):
         meds_menu = Medium.objects.all()   

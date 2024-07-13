@@ -40,7 +40,8 @@ body {
     height: 300px;
     object-fit: cover;
     margin: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #fefefe;
+    
     border-radius: 4px;
     padding: 5px;
 }
