@@ -83,11 +83,13 @@ class AddMediumView(CreateView):
             context["meds_menu"] = meds_menu
             return context
 
-class UpdatePostView(UpdateView):
+class UpdatePostView(SuccessMessageMixin, UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
     #fields = ['title', 'title_tag', 'description', 'medium',]
+    success_message = "Your post was successfully updated!"
+    success_url = reverse_lazy('home')
 
 def get_context_data(self, *args, **kwargs):
             meds_menu = Medium.objects.all()   
@@ -101,8 +103,11 @@ class DeletePostView(DeleteView):
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
 
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, "Your post was successfully deleted!")
+        return super().delete(request, *args, **kwargs)
 
-def get_context_data(self, *args, **kwargs):
+    def get_context_data(self, *args, **kwargs):
             meds_menu = Medium.objects.all()   
             context = super(DeletePostView, self).get_context_data(*args, **kwargs)
             context["meds_menu"] = meds_menu
