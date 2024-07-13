@@ -1,3 +1,39 @@
+/* Custom CSS for the pink navbar */
+body {
+    background-color: #f8eff4; /* Pink background color */
+    color: rgb(147, 125, 125);
+}
+
+/* Google fonts */
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+p { 
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+} 
+
+body { 
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    } 
+
+
+.justified {
+    text-align: justify;
+}
 
 .thumbnail {
     width: 300px;
@@ -26,10 +62,11 @@
 }
 
 .post-item {
-    border: 1px solid #ddd;
+    border: 1px solid #fefefe;
     padding: 15px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #fefefe;
+
     text-align: center;
 }
 
@@ -118,7 +155,9 @@
         margin: 0 100px;
     }
 }
-    
+ 
+/* post details */
+
 
 
 
