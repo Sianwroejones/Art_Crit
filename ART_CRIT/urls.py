@@ -19,11 +19,11 @@ from django.urls import path, include
 
 from django.conf import settings
 from django.conf.urls.static import static
-from POST.views import splash_view
+from POST.views import SplashView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', splash_view, name='splash'),
+    path('', SplashView.as_view(), name='splash'),
     path('home/', include('POST.urls')),
     path('SIGNUP/', include('SIGNUP.urls')),
     path('SIGNUP/', include('django.contrib.auth.urls')),

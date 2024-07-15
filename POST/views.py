@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, RedirectView, TemplateView
+from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView, RedirectView
 from .models import Post, Medium, Comment 
 from .forms import PostForm, EditForm, CommentForm
 from django.urls import reverse_lazy
@@ -12,11 +12,10 @@ class SplashView(TemplateView):
 
 # Create your views here.
 
-#def home(request):
-#    return render(request, 'home.html', {})
 
-#def splash_view(request):
-#    return render(request, 'splash.html')
+    #def home(request):
+     #   return render(request, 'home.html', {})
+
 
 
 class HomeView(ListView):
