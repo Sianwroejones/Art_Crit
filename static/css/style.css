@@ -96,9 +96,15 @@ body {
 .thumbnail-link {
     text-decoration: none; /* Remove underline */
     outline: none; /* Remove outline */
-    border: none; /* Remove border */
+    border: none; /* Remove border */   
 }
 
+/*-----------------------------------------------splash page */
+
+.gifsize {
+    width: 200px;
+    height: auto;
+}
 
 /*-----------------------------------------------media query ipad*/
 

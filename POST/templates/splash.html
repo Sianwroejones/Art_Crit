@@ -10,12 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splash Page</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/splash.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="splash-container">
         <h1>Welcome to My Website</h1>
         <p>This is the splash page.</p>
+        <img src="{% static 'gifs/sian_art_crit.gif' %}" alt="Welcome GIF" class="gifsize">
         <a href="{% url 'home' %}" class="enter-btn">Enter</a>
     </div>
 </body>
