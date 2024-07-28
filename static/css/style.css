@@ -1,5 +1,5 @@
 .content {
-    flex: 1; /* This makes the content take the remaining space */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,38 +8,34 @@
 .content img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the GIF covers the content area while maintaining aspect ratio */
+    object-fit: cover; 
 }
 
-/* Custom CSS for the pink navbar */
+/* navbar */
 body {
     background-color: #f8eff4; /* Pink background color */
     color: rgb(147, 125, 125);
 }
 
 /* Google fonts */
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 900
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
 p { 
 font-family: "Playfair Display", serif;
 font-optical-sizing: auto;
-font-weight: <weight>;
+font-weight: weight;
 font-style: normal;
 } 
 
 body { 
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
     } 
 
@@ -48,6 +44,7 @@ body {
     text-align: justify;
 }
 
+/* Homepage */
 .thumbnail {
     width: 300px;
     height: 300px;
@@ -60,6 +57,7 @@ body {
     padding: 5px;
 }
 
+/* Post Detail */
 .enlarged {
     width: 800px;
     height: 600px;
@@ -105,7 +103,7 @@ body {
     margin-top: 10px;
 }
 
-
+/* Mediums detail */
 
 .thumbnail-link {
     text-decoration: none; /* Remove underline */
@@ -169,68 +167,3 @@ body {
         margin: 0 100px;
     }
 }
- 
-/* post details */
-
-
-
-
-
---------------------------------/* homepage
-
-.enquiries { 
-    padding-bottom: 40px; 
-    padding-top: 0px;
- }
- 
- .bg-colour {
-    background-color: #E1C6D2;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    width: 100%;
-    margin-bottom: 70px;
- }
- 
-.sold {
-    color: red;
-    padding-bottom: 40px;
-}
-
-/*-----------------------------------------------contact page
-
-.contact-details{
-    padding-left: 30px;
-    margin-top: 20px;
-}
-.contact-heading {
-    margin-bottom: 40px;
-    margin-top: 60px;
-}
-.contact-form {
-    margin-top: 20px;
-}
-.contact-details p {
-    margin-top: 20px;
-}
-.map-container{
-    width: 100px;
-    height: 300px;
-    margin-top: 10px;
-    margin-top: 50px;
-    margin-left: 100px;
-}
-.opening-hours{
-    margin-top: 20px;
-    padding-left: 30px;
-}
-.opening-hours h3 {
-    margin-bottom: 10px ;
-}
-
-.opening-hours p {
-    margin-bottom: 20px;
-}
-.bg-contact-color {
-    background-color:#bacbba ;
-    padding: 10px;
-} */
