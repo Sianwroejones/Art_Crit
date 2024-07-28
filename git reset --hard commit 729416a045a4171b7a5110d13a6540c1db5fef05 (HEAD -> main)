@@ -1,0 +1,391 @@
+[33mcommit 729416a045a4171b7a5110d13a6540c1db5fef05[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sun Jul 28 16:29:56 2024 +0000
+
+    fixing bugs
+
+[33mcommit 3deaeba9055babfe2f6c3a50fd6ba8d8c8d6b739[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sun Jul 28 16:21:46 2024 +0000
+
+    reinstalled whitenoise
+
+[33mcommit 17a88ff6c8efd5bbe21d58b5e6d62c47b582b491[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Fri Jul 26 12:15:21 2024 +0000
+
+    splash page gif complete and is a clickable link
+
+[33mcommit 2baceeadb2c08e096e04f59fa7372227821180c9[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 24 21:16:36 2024 +0000
+
+    first returning commit - splash page gif
+
+[33mcommit 5b7f135a6a11aef66b19842f55663b89443534f5[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 15 15:25:39 2024 +0000
+
+    connected splash page to base html
+
+[33mcommit e9ea1370933562e09046522e4af4b7b416be5ad2[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 15 14:47:57 2024 +0000
+
+    got splash page direction working
+
+[33mcommit 630bb23f5922e7088206eb281f306d8e2b7cf433[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sun Jul 14 09:10:05 2024 +0000
+
+    trying to connect splash page
+
+[33mcommit 2752a9d05b01422bd73bcfeedb9122719256b42a[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sat Jul 13 22:19:01 2024 +0000
+
+    splash page attempt, have also changed homepage in urls, dont forget
+
+[33mcommit 07cd41650be61c52dff1ed994f4557b16a28b668[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sat Jul 13 21:41:59 2024 +0000
+
+    notifacation tweaks
+
+[33mcommit 46e7ca2db6928cfbb95ba97bbbfb9b2ea286ec53[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sat Jul 13 20:46:05 2024 +0000
+
+    notification for signup
+
+[33mcommit 22eb1238968e1aa560edd5e01f6b6ab314d72f87[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sat Jul 13 20:41:48 2024 +0000
+
+    more alert messages for views
+
+[33mcommit cc70263cf8e6c9be92699395a951eeb9a494bd73[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sat Jul 13 20:33:36 2024 +0000
+
+    started adding notifications
+
+[33mcommit e17aaf1f5a7c8e9c2bba733cfc2e1722b365a0eb[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sat Jul 13 17:18:30 2024 +0000
+
+    some css styling
+
+[33mcommit 8cb5809758b2a05e3d38d004b473f15225a948ce[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sat Jul 13 13:34:50 2024 +0000
+
+    thumbnail and image resizing
+
+[33mcommit d7957a2c12da7816b3b7352c76fa618c1b176a2a[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Fri Jul 12 21:26:28 2024 +0000
+
+    taken add medium off navbar
+
+[33mcommit 79448062884484888f82ea976cecd334e33956c0[m
+Merge: 402a17b 991c667
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Fri Jul 12 21:07:11 2024 +0000
+
+    Merge branch 'main' of https://github.com/Sianwroejones/Art_Crit
+
+[33mcommit 402a17b3f5283bc4a97dbeb7f4179810ef1c265b[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Fri Jul 12 21:03:39 2024 +0000
+
+    medium dropdown menu in navbar in every view
+
+[33mcommit 86ebf10310ab9cd886526feb1682d7224830dfe5[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Fri Jul 12 15:47:46 2024 +0000
+
+    improved registration page
+
+[33mcommit 991c667c96d8baf5a449c8d85b85ed19e54cdf66[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Fri Jul 12 12:18:50 2024 +0000
+
+    dj_database_url
+
+[33mcommit ac41a7be64224186cffdaa89775f1a32be3176fa[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Fri Jul 12 11:59:49 2024 +0000
+
+    styling registration form
+
+[33mcommit 6228a0327768478fae61ff2c21da8ec62f9fd2c9[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Fri Jul 12 09:35:45 2024 +0000
+
+    more comment features
+
+[33mcommit effa5bbd036bd5aa9b9269128cf2188f7fd748d3[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Thu Jul 11 15:21:31 2024 +0000
+
+    added basic feedback function
+
+[33mcommit 00642d2333822e25518948af2823ca69d6f0b461[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Thu Jul 11 10:00:02 2024 +0000
+
+    migrated new comments model
+
+[33mcommit a400cf57aa4c43f71b52c2ec27cd6a9f58c1c4ce[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 10 22:23:51 2024 +0000
+
+    adding picture to post but not on homepage
+
+[33mcommit 1087248ce081bdbac05291a35d09d98e704c3948[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 10 21:35:26 2024 +0000
+
+    added rich text editor
+
+[33mcommit 67d51803ca704bf20bfb0735e0defdb43ced009c[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 10 20:44:35 2024 +0000
+
+    added some javascript to forms.py to dtermine who author is when they post
+
+[33mcommit 4050f7bad5878a14f25ff8265d60d114261ad3b8[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 10 20:18:19 2024 +0000
+
+    only author can edit delete functionaily
+
+[33mcommit 27d04a08ee228d9cb162f42138009dde68108930[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 10 18:29:08 2024 +0000
+
+    slugify url
+
+[33mcommit 12a3482fb3057a7882e33380e569ce7aa65d6bca[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 10 16:50:04 2024 +0000
+
+    medium.html content
+
+[33mcommit 4fc56ca21aed2edd8a28d07283e41b73ca95bc9e[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 10 16:35:41 2024 +0000
+
+    set up medium view, url, html
+
+[33mcommit 7c72d9c0b61ac4f8a421ab70a2cbada12fd3b875[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 10 15:20:18 2024 +0000
+
+    built category system
+
+[33mcommit 496db26bebea8e1c0bd9a58d2a1e2b9b6834443c[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 21:34:05 2024 +0000
+
+    changes to medium in base.html
+
+[33mcommit 92532ee99301605505f241d88bd9fdbc742f96a4[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 20:57:00 2024 +0000
+
+    added medium choices dropdown for upload page
+
+[33mcommit 909f6cc46fd7fe828fe2224d81953da9add46b92[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 20:04:09 2024 +0000
+
+    slice and safe code to allow html in post
+
+[33mcommit ec4ce86276755cfb521b366b6e35d04d195b9d38[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 19:47:20 2024 +0000
+
+    making sure edit and delete options are only in place for logged in user
+
+[33mcommit e4cef71c709a210436699aa1032b23a3303f23af[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 17:18:32 2024 +0000
+
+    if else user authentication
+
+[33mcommit edf47d0337190f5eb6d32722225e48dd6d1eccfb[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 17:02:41 2024 +0000
+
+    user authentication set up
+
+[33mcommit 1eacc4abdd98acafbd8391df036e209fc70d16a6[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 15:26:34 2024 +0000
+
+    added delete function
+
+[33mcommit 890030aba97a0f39d2dca32ff4962b52c4d37c04[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 15:02:14 2024 +0000
+
+    added delete function
+
+[33mcommit 273ec7c6344caada9134aff93c4106115a945fba[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Tue Jul 9 14:29:38 2024 +0000
+
+    edit function author removed
+
+[33mcommit dd7b5894c2d1a45cfc47fd5f31556b303f56e645[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 22:11:49 2024 +0000
+
+    added edit functionality, needs adjusting
+
+[33mcommit 311aca122151f11339bbbe2a241a81075c848628[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 21:27:26 2024 +0000
+
+    forms styling with bootstrap
+
+[33mcommit d1230ced9b9eafde2ddbdeaab1bd54d18113c5d8[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 21:04:52 2024 +0000
+
+    add_post html and functionality
+
+[33mcommit 101a54d7416a059371f0598125a378582db050c9[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 18:49:17 2024 +0000
+
+    add_post html with form
+
+[33mcommit f71ae6f545eab275fd7e41dbe2392e4ff5c30ed8[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 18:04:30 2024 +0000
+
+    added title_tag model and made migration
+
+[33mcommit 2af6a8d217e63796ee2a10b693b36b14a4ca317c[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 17:28:18 2024 +0000
+
+    base html, adding bootstrap template and button
+
+[33mcommit 77bfea746a1c632ae84a52489dd56c463ef75a10[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 15:20:09 2024 +0000
+
+    detail view, templete etc
+
+[33mcommit 0b95cc758792440c375c803363d7f04c11bf442e[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 14:50:34 2024 +0000
+
+    views, urls,home template, to display posts on hompage
+
+[33mcommit 6044d519ff64a83f02f1a626e136ae216b1f812d[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Mon Jul 8 14:02:00 2024 +0000
+
+    models and return for post
+
+[33mcommit a75a6942e4970c8402ccac22e4536ffafc8d4b3b[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sun Jul 7 21:10:47 2024 +0000
+
+    POST url views and template
+
+[33mcommit deab41c2ac3cafc1ebce332ed52656c8812795d3[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sun Jul 7 20:59:04 2024 +0000
+
+    url path
+
+[33mcommit 6741c955fd9e476704b3f4df53e366f667d2875d[m
+Merge: 329d17d f513a1f
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sun Jul 7 20:42:34 2024 +0000
+
+    Merge branch 'main' of https://github.com/Sianwroejones/Art_Crit
+
+[33mcommit 329d17d87d0000afbc26e07ce1fd8d2c138f009d[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sun Jul 7 20:41:22 2024 +0000
+
+    got admin working by adding CRF_TRUSTED_ORIGINS in settings.py
+
+[33mcommit f513a1f74efebebf0df6eb6e0ece17a904e68487[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Sun Jul 7 18:59:59 2024 +0000
+
+    make migrations
+
+[33mcommit 4ddfefcbe18034bb7015771f1c39f51d1931a3a9[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Thu Jul 4 15:30:42 2024 +0000
+
+    deleted dupliacte of staticfiles in installed apps
+
+[33mcommit 346b3576c58e103a719840adcf5eafe115e8a179[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Thu Jul 4 15:25:54 2024 +0000
+
+    commented out models for now
+
+[33mcommit 19d0c0e2b294395a27408aa3649f0770a55f04c6[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Thu Jul 4 11:37:43 2024 +0000
+
+    models.py
+
+[33mcommit 07f32bcb901b93200e7ed7eaf0cf2018110ecebd[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 3 17:45:31 2024 +0000
+
+    installed whitenoise
+
+[33mcommit e15609074db8d98ea7a07b098021a341d9fd440a[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 3 17:38:04 2024 +0000
+
+    [TEMPLATES_DIR]
+
+[33mcommit 8e701b5034ad8db26ba7c12837c86852def539bc[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 3 17:15:38 2024 +0000
+
+    TEMPLATES_DIR
+
+[33mcommit c524acdf3599619c5d2b971dbadd76605e2ff70b[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 3 16:40:42 2024 +0000
+
+    corrected a space in variable name
+
+[33mcommit 9a10ea211aeebd0f08ca5dff2a0bc07ee103e140[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 3 14:36:18 2024 +0000
+
+    tutor
+
+[33mcommit 54b3d41a93d1f3b30f5f938daaa59eebe98c1137[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 3 12:40:57 2024 +0000
+
+    setting up database url
+
+[33mcommit d4fd8635d7ddc0e570fbb984a418872898f2376b[m
+Author: Sian Jones <sianwroejones@gmail.com>
+Date:   Wed Jul 3 11:45:08 2024 +0000
+
+    initial commit
+
+[33mcommit 8a1067836d5c222d3805506322700b4b73e567f5[m
+Author: Sianwroejones <165160233+Sianwroejones@users.noreply.github.com>
+Date:   Wed Jul 3 12:03:15 2024 +0100
+
+    Initial commit

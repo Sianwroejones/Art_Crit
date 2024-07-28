@@ -8,6 +8,7 @@
 <div class="mb-3">
     <form method="POST">
        {% csrf_token %}
+       {{ form.as.p }}
        <div class="mb-3">
         <input type="text" class="form-control" name="username" placeholder="Username"> 
 
