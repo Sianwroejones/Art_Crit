@@ -25,6 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', SplashView.as_view(), name='splash'),
     path('home/', include('POST.urls')),
-    path('SIGNUP/', include('SIGNUP.urls')),
     path('SIGNUP/', include('django.contrib.auth.urls')),
+    path('SIGNUP/', include('SIGNUP.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

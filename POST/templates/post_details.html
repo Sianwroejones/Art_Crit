@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    {{ post.title_tag }}
+{{ post.title_tag }}
 {% endblock %}
 
 {% block content %}
@@ -9,51 +9,52 @@
     <div class="post-details">
         <h1>{{ post.title }}</h1>
         <p>By: {{ post.author.first_name }} {{ post.author.last_name }} - {{ post.post_date }}</p>
-        
+
         {% if user.is_authenticated %}
-            {% if user.id == post.author.id %}
-                <small>
-                    - <a href="{% url 'update_post' post.pk %}">(Edit)</a>
-                    <a href="{% url 'delete_post' post.pk %}">(Delete)</a>        
-                </small>
-            {% endif %}
+        {% if user.id == post.author.id %}
+        <small>
+            - <a href="{% url 'update_post' post.pk %}">(Edit)</a>
+            <a href="{% url 'delete_post' post.pk %}">(Delete)</a>
+        </small>
         {% endif %}
-        
+        {% endif %}
+
         <hr>
-        
+
         {% if post.header_image %}
-            <img class="enlarged" src="{{ post.header_image.url }}" alt="{{ post.title }}">
+        <img class="enlarged" src="{{ post.header_image.url }}" alt="{{ post.title }}">
         {% endif %}
-        
+
         <br><br>
+        {{ post.medium }}
         <p>{{ post.description|safe }}</p>
-        
+
         <h2>Feedback...</h2>
-        
+
         <br>
-        
+
         {% if not post.comments.all %}
-            <p>No Feedback Yet...</p>
+        <p>No Feedback Yet...</p>
         {% else %}
-            <a href="{% url 'add_comment' post.pk %}">Add Feedback</a>
-            <br><br>
-            
-            {% for comment in post.comments.all %}
-                <strong>{{ comment.name }} - {{ comment.date_added }}</strong>
-                <br>
-                {{ comment.body }}
-                <br><br>
-                <hr>
-            {% endfor %}
-            
-        {% endif %}
-        
-        <br><br>
-        
         <a href="{% url 'add_comment' post.pk %}">Add Feedback</a>
-        <a href="#top" id="back-to-top">Back to Top</a>
+        <br><br>
+
+        {% for comment in post.comments.all %}
+        <strong>{{ comment.name }} - {{ comment.date_added }}</strong>
+        <br>
+        {{ comment.body }}
+        <br><br>
+        <hr>
+        {% endfor %}
+
+        {% endif %}
+
+        <br><br>
+
+        <a href="{% url 'add_comment' post.pk %}" class="btn btn-secondary">Add Feedback</a>
+
         <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
-        
+
     </div>
 </main>
 {% endblock %}

@@ -4,38 +4,29 @@
 
 {% if user.is_authenticated %}
 <h1>Add Art Medium...</h1>
-<br/><br/>
-<!--<div class="mb-3">
-    <form method="POST">
-       {% csrf_token %}
-       {{ form.as_p }}
-       <button class="btn btn-secondary">Add Medium</button>
-</div>
-
-</form>
--->
+<br /><br />
 
 
 <div class="mb-3">
-    <form method="POST">
-       {% csrf_token %}
-       {{ form.as_p}}
-       <div class="mb-3">
-        <input type="text" class="form-control" name="medium" placeholder="Add Medium"> 
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p}}
+    <div class="mb-3">
+      <input type="text" class="form-control" name="medium" placeholder="Add Medium">
 
-      </div>
+    </div>
 
-      <div class="mb-3">
-        
-      
-       <button class="btn btn-secondary">Add</button>
-</div>
+    <div class="mb-3">
 
 
-{% else %}
+      <button class="btn btn-secondary">Add</button>
+    </div>
 
-Please login to continue ...
 
-{% endif %}
+    {% else %}
 
-{% endblock %}
+    Please login to continue ...
+
+    {% endif %}
+
+    {% endblock %}

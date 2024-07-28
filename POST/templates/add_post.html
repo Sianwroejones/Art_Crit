@@ -4,22 +4,20 @@
 
 {% if user.is_authenticated %}
 <h1>Add Art Post</h1>
-<br/><br/>
+<br /><br />
 <div class="mb-3">
     <form method="POST" enctype="multipart/form-data">
-       {% csrf_token %}
-       {{ form.media }}
-       {{ form.as_p }}
-       <button class="btn btn-secondary">Share</button>
+        {% csrf_token %}
+        {{ form.media }}
+        {{ form.as_p }}
+        <button class="btn btn-secondary">Share</button>
 </div>
 
 </form>
 
 <script>
     let name = "{{ user.id }}";
-    document.getElementById("user").value
-        = name;     
-
+    document.getElementById("user").value = name;
 </script>
 
 {% else %}

@@ -4,7 +4,6 @@ from django.urls import reverse
 from datetime import datetime, date
 from ckeditor.fields import RichTextField
 
-# Create your models here.
 
 class Medium(models.Model):
     type = models.CharField(max_length=255, default='Untitled')
@@ -13,7 +12,6 @@ class Medium(models.Model):
        return self.type 
 
     def get_absolute_url(self): 
-       #return reverse('details', args=(str(self.id)))  
        return reverse('home') 
 
 class Post(models.Model):
@@ -22,7 +20,6 @@ class Post(models.Model):
    title = models.CharField(max_length=255, default='Untitled')
    title_tag = models.CharField(max_length=255,)
    description = RichTextField(blank=True, null=True)
-   #description = models.TextField()
    author = models.ForeignKey(User, on_delete=models.CASCADE)
    created = models.DateTimeField(auto_now_add=True)
    modified = models.DateTimeField(auto_now=True)
@@ -33,17 +30,8 @@ class Post(models.Model):
        return self.description + '|' + str(self.author)
 
    def get_absolute_url(self): 
-       #return reverse('details', args=(str(self.id)))  
        return reverse('home') 
 
-
-
-#class Comment(models.Model):
- #   post = models.ForeignKey(Post, related_name="comments" on_delete=models.CASCADE)
- #   text = models.TextField()
-#  author = models.ForeignKey(User, on_delete=models.CASCADE)
- #   created = models.DateTimeField(auto_now_add=True)    
- #   modified = models.DateTimeField(auto_now=True)
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
