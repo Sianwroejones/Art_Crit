@@ -7,21 +7,14 @@ from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth import logout
 
+
 class SplashView(TemplateView):
     template_name = 'splash.html'
-
-# Create your views here.
-
-
-    #def home(request):
-     #   return render(request, 'home.html', {})
-
 
 
 class HomeView(ListView):
     model = Post
     template_name = 'home.html'
-    #ordering = ['-id']
     ordering = ["-post_date"]
     meds = Medium.objects.all()
 
@@ -41,12 +34,11 @@ class PostDetailView(DetailView):
         context["meds_menu"] = meds_menu
         return context
 
+
 class AddPostView(SuccessMessageMixin, CreateView):
     model = Post
     form_class = PostForm
     template_name = 'add_post.html'
-    #fields = '__all__'
-    #fields = ('title', 'description',)
     success_message = "Your post was successfully created!"
     success_url = reverse_lazy('home') 
 
@@ -60,8 +52,6 @@ class AddCommentView(SuccessMessageMixin, CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'add_comment.html'
-    #fields = '__all__'
-    #fields = ('title', 'description',)
     success_message = "Your comment was successfully created!"
     success_url = reverse_lazy('home')
 
@@ -79,10 +69,8 @@ class AddCommentView(SuccessMessageMixin, CreateView):
 
 class AddMediumView(CreateView):
         model = Medium
-        #form_class = PostForm
         template_name = 'add_medium.html'
         fields = '__all__'
-        #fields = ('title', 'description',)
 
         def get_context_data(self, *args, **kwargs):
             meds_menu = Medium.objects.all()   
@@ -94,7 +82,6 @@ class UpdatePostView(SuccessMessageMixin, UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'update_post.html'
-    #fields = ['title', 'title_tag', 'description', 'medium',]
     success_message = "Your post was successfully updated!"
     success_url = reverse_lazy('home')
 
@@ -126,11 +113,3 @@ def MediumView(request, meds):
     medium_posts = Post.objects.filter(medium=meds.replace('-', ' '))
     return render(request, 'medium.html', {'meds':meds.title(), 'medium_posts':medium_posts})
 
-class CustomLogoutView(SuccessMessageMixin, RedirectView):
-    url = reverse_lazy('login')
-    success_message = "You have been successfully logged out."
-
-    def get(self, request, *args, **kwargs):
-        logout(request)
-        messages.success(self.request, self.success_message)
-        return super().get(request, *args, **kwargs)
