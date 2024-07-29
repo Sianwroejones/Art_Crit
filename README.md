@@ -301,7 +301,7 @@ I later discovered that it was bad developer practise to name my apps in capital
 
 I encountered a big issue where my logout function had come up with an error. It was all working perfectly up until this point, the database went down again on the morning of submission, which took up crucial time. I would have liked to have had the time to be more thorough with validation. 
 
-
+I had a problem with images for deployment, I had figured this out just at the end but it was too close to submission time
 
 
 
