@@ -17,8 +17,8 @@ class Medium(models.Model):
 
 
 class Post(models.Model):
-    image = models.ImageField()
-    header_image = models.ImageField(null=True, blank=True, upload_to="images/")
+    image = CloudinaryField('image', default='placeholder')
+    header_image = CloudinaryField('header_image', default='placeholder')
     title = models.CharField(max_length=255, default='Untitled')
     title_tag = models.CharField(max_length=255,)
     description = RichTextField(blank=True, null=True)
@@ -27,8 +27,9 @@ class Post(models.Model):
     modified = models.DateTimeField(auto_now=True)
     post_date = models.DateField(auto_now_add=True)
     medium = models.CharField(max_length=255, default='uncategorised')
+   
 
-def __str__(self):
+    def __str__(self):
         return self.description + '|' + str(self.author)
 
 def get_absolute_url(self): 
