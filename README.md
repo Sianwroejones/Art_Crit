@@ -1,131 +1,310 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Art Crit
 
-Welcome Sian Jones,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+ArtCrit Community is a vibrant online platform where artists of all levels come together to share their work and receive constructive feedback. Members can post their artwork, engage in thoughtful discussions, and gain insights from a supportive community of peers and experts. With ArtCrit Community, artists never have to feel stuck again. The platform fosters growth and creativity through collaborative critique, providing the encouragement and guidance needed to refine skills and evolve as an artist. Whether you're a beginner looking for tips or a seasoned artist seeking fresh perspectives, ArtCrit Community is your go-to space for artistic development and inspiration.
+Deployed link: 
+https://art-crit-bd23c93b0acb.herokuapp.com/
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+Purpose and Target Audience:
+Problem Statement: This is a platform for practising artists to explore eachothers art and give and receive feedback.
+Purpose: It allows artists to receive feedback about their work in order for them to continue experimenting with the help of constructive criticism. 
+Target Audience: It is for artists who have left the bubble of education and now feel on their own in the artworld. Once you have left art school, there is no one to help you with your work and guide you with what you could do. This is a community of artists who can support each other and provide and receive guidance.
 
-## Gitpod Reminders
+Persona and User Stories:
+Sian a practising artist who feels she would benefit from a community of other artists in order to feel supported and connected
+User Stories:
+•	As an artist I want to be able to browse other artists work.
+•	As a user I want to be able to view work and give feedback
+•	As a user I want to be able to create an account so that I can upload my own work. 
+•	As an artist I want to be able to view other artists work for insoiration and receive constructive critism about my own. 
+•	As a user I want to be able to edit and delete my posts.
+•	As a user I want to explore new other artists work and look into all available mediums. 
+•	As a user I want to learn more about the artists work through their descriptions on their posts.
+•	As an admin I want to be able to moderate the artist posts so that I can ensure the platform is being used as it is intended
+•	As a user I want to be able to communicate with other artists of all backgrounds. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+Wireframe & Initial Design:
 
-A blue button should appear to click: _Make Public_,
+Home Page
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/7568718d-610d-444a-86f1-c5fc05487d7b">
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+Splash Page
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/9aff831d-009e-4921-8faa-dbf9e7d539bc">
 
-A blue button should appear to click: _Make Public_,
+ 
 
-Another blue button should appear to click: _Open Browser_.
+Add Post
+ <img width="452" alt="image" src="https://github.com/user-attachments/assets/ee647db5-3fc2-41a5-933b-b6f846f4a4cc">
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+login
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/7fb1b99e-c356-4936-9894-90c1a9998263">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+ 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+Homepage
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/894d9b63-9c0f-4e1b-8751-cfb449f6dc69">
 
-### Connecting your Mongo database
+ 
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+Splash page 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/3ce3f097-1573-41ec-a293-1616d311827c">
 
-------
+ 
 
-## Release History
+Add post 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/f3e24563-f232-4382-9fa4-4cda5fff5ef8">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**June 18, 2024,** Add Mongo back into template
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+Explore Mediums
+<img width="230" alt="image" src="https://github.com/user-attachments/assets/65c04613-8eb8-4ab6-8522-52507785a94f">
 
-**May 28 2024:** Fix Mongo and Links installs
 
-**April 26 2024:** Update node version to 16
+  
 
-**September 20 2023:** Update Python version to 3.9.17.
+Post Detail
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/be4c074d-a6b3-48ac-929b-32e3d2ade9d6">
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/5c4f813e-2410-4037-9ddc-6fc31f6f00b9">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+ 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+Agile:
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+This project was created using Agile principles using a Kanban board I created on Github. This method has helped me priories and organise each step clearly.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/7a75897c-0ad8-4b24-ae27-c1007a65a09d">
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+ 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Design Choices
+Colour Scheme: 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#f8eff4
+rgb(147, 125, 125)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+Typography: Playfair Display (from google fonts)
 
-## FAQ about the uptime script
+Priority Features:
 
-**Why have you added this script?**
+Splash page:
+This is an introductory screen a user sees when visiting the website. I have created a fun animation to create the look and feel of the website that you can click on to get to the homepage. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Home page:
 
-**How will this affect me?**
+This is where an introduction to the website is stated and has a list of all recently posted work by other artists that you can scroll through and explore. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Registration:
+This allows users to sign up to the service which will allow them to upload their own work and create feedback for other artist’s work.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Sign In:
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+A page for users to sign in which will enable them to add posts, delete and edit. Add feedback to other people’s posts
 
-**So….?**
+Mediums:
+This is in the form of a dropdown menu in the navbar. You can select an artist medium to see which artworks have been posted in ta particular category.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Add post:
+this allows you to add a post and categorise it by medium which will then appear on the home page. You have the option to delete and edit your post at any time. 
 
-**Can I opt out?**
+Future features:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+I have not included a footer because this is a stand alone platform that does not have any links to social media. If the website evolved to have different branches on social media platforms, then this could be added at a later date. 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Have the option to create a profile for each artist.
 
-**Anything more?**
+Have an option to add other artists profiles.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+provide a chat function for artists to communicate with eachother about upcoming exhibitions and collaborations. 
 
----
+Database Design:
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/fc90c365-b868-464b-98af-e8f70944e947">
 
-Happy coding!
+ 
+
+
+Data Models:
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/82cd5348-7f69-483a-a76a-fd722615551a">
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/99ae37eb-b6d3-4b81-97df-dc20cebd6255">
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/b023ee55-bfea-48b2-a0a6-b1a097de6219">
+
+
+
+
+
+ 
+
+ 
+
+
+ 
+Validation 
+
+
+Responsiveness:
+
+The site is responsive and looks good on different screen sizes. 
+
+
+
+Testing Testing Testing
+
+Python:
+
+Settings ART_CRIT 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/4e04ebf0-06f8-4272-bbf3-38c9872f93e6">
+
+
+urls ART_CRIT
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/5a6ed367-11ee-4caf-a62f-6050eb3727e2">
+
+ 
+admin POST
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/dd415854-7ab7-42ec-a0c3-1b18690d9743">
+
+ 
+forms POST
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/8aa7aedc-ed9b-452b-a303-e5358f0f1e03">
+
+ 
+models POST
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/7dbf26ca-ed25-479d-b661-3e8e6bc5e645">
+
+ 
+urls POST
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/cdb7be4f-0963-45af-8e2f-a8426da3c976">
+
+
+views POST
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/e377b8ec-8824-413f-8f7e-a4fd1f3cdf5c">
+
+ 
+forms SIGNUP
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/dd5c157f-b080-44e3-9761-3ce2ab7ab31e">
+
+ 
+urls SIGNUP
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/be18e337-25f2-4e80-90b7-be84bfde451c">
+
+ 
+views SIGNUP
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/b891fd72-d3c1-45c5-b793-9953914efa6d">
+
+ 
+
+Testing HTML
+
+home
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/e69c6385-9c95-410a-bdf0-cebaf2a081e5">
+
+ 
+
+splash
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/70ca7a6d-19be-44a4-a9d4-d3f657159de5">
+
+ 
+
+Register
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/70d33b23-23b1-4900-ad4b-d37bc206cec6">
+
+ 
+
+login
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/67e3fae1-52b1-4513-aef6-f6dd5f372205">
+
+ 
+
+css
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/efaa19f6-c543-4de5-bbc0-ecc4254ccf73">
+
+
+ 
+
+Lighthouse Audit:
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/6b41becc-1ff1-409c-9c5e-07ba9ac2c0f9">
+
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/a4b48a7e-e7b0-43c9-997b-e754b17ef9e0">
+
+
+ 
+
+
+Tools and technologies used:
+
+The technologies implemented in this application included HTML5, CSS, Bootstrap, Python and Django
+
+Python used as the back-end programming language.
+Git used for version control. (git add, git commit, git push)
+GitHub used for secure online code storage.
+GitHub Pages used for hosting the deployed front-end site.
+Gitpod used as a cloud-based IDE for development.
+Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
+Code Institute database used as the Postgres database.
+Heroku used for hosting the deployed back-end site.
+Cloudinary used for online static file storage.
+Balsamiq for collaborative design and prototyping (wireframes
+
+Google Chat GPT and Stack Overflow utilized for general research or solving a bug, information gathering, and various online tools.
+
+TV Paint to create animation for splash page
+
+Deployment :
+I used the Django cheatsheet for instructions to deploy my app using Heroku.
+
+Set up project including static files, allowed hosts and other dependencies
+
+Created a Heroku Application and connected it to git hub repo
+
+Added a Procfile to run app.
+
+Configured database 
+
+Set all environment variables in Heroku.
+
+set the project to serve static files 
+
+Deployed latest push from Gitpod
+
+Ran database migrations on Heroku
+
+
+Credit: 
+
+I used I think therefore I blog resource in lms but I found it a little difficult to follow comprehend in parts, so I also used a couple of youtube tutorials which were helpful:
+ https://www.youtube.com/watch?v=rA4X73E_HV0
+https://www.youtube.com/watch?v=bhBWzXVJ5so
+
+I used slack and chat gpt to help me with error messages in the terminal.
+
+The images are some of my own artwork and others are of friends’ work and google images.
+
+Wireframes were made using balsamiq
+
+
+
+Some extra notes
+
+Due to database issues, our cohort was given extra time to complete the project. I  was unable to take advantage of the extra time due to prior engagements for the entire following week, therefore I had to opt for the late submission option and upon my return I was left with very little time to make adjustments to my project.
+
+I later discovered that it was bad developer practise to name my apps in capital letters. By the time I was privy to this information, I had already almost completed my project and would be too late to start again. The Django cheat sheet we were provided with was very misleading, where it says to set up the project apps, it has examples in capitals. This is very misleading. I know not to do this in future and will definitely not be doing this again.
+
+I encountered a big issue where my logout function had come up with an error. It was all working perfectly up until this point, the database went down again on the morning of submission, which took up crucial time. I would have liked to have had the time to be more thorough with validation. 
+
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/0ec6f71d-882f-4cbb-a0f4-dc21ecb08703)
