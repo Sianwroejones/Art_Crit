@@ -5,6 +5,8 @@ from django.urls import reverse_lazy
 from .forms import SignUpForm
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib import messages
+from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView, DeleteView, RedirectView
+from django.contrib.auth import logout
 
 
 # Create your views here.
@@ -21,3 +23,11 @@ class UserRegistrationView(generic.CreateView):
         return response
 
 
+class CustomLogoutView(SuccessMessageMixin, RedirectView):
+    url = reverse_lazy('login')
+    success_message = "You have been successfully logged out."
+
+    def get(self, request, *args, **kwargs):
+        logout(request)
+        messages.success(self.request, self.success_message)
+        return super().get(request, *args, **kwargs)
