@@ -1,3 +1,9 @@
+import os
+
+os.environ["DATABASE_URL"] = "postgres://uccse13ervd:xbj6XdWnLTFd@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/wink_carve_bath_847643"
+
+os.environ["SECRET_KEY"] = "capybara"
+
 core.Microsoft*
 core.mongo*
 core.python*
