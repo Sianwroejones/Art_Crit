@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net','.herokuapp.com',]
+ALLOWED_HOSTS = ['8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net','.herokuapp.com','8000-sianwroejones-artcrit-njbr4gaty1h.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'cloudinary_storage', 
     'cloudinary',
     'SIGNUP',
-    'ckeditor',
+    'ckeditor'
 ]
 
 MIDDLEWARE = [
