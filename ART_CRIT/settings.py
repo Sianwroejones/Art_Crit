@@ -146,7 +146,7 @@ CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['https://8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net', 'https://8000-sianwroejones-artcrit-njbr4gaty1h.ws.codeinstitute-ide.net']
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
