@@ -6,13 +6,16 @@
 
 <h1>{{ meds }} </h1>
 
+<br> <br> 
+
 <ul>
     {% for post in medium_posts %}
-    <a href="{% url 'details' post.pk %}">
-        <h2>{{ post.title }}
+    <!-- <a href="{% url 'details' post.pk %}"> -->
+        <br> <br>
+        <h2>{{ post.title }}</h2>
     </a>
 
-    <img class="thumbnail" src="{{ post.header_image.url }}">
+    <a href="{% url 'details' post.pk %}"><img class="thumbnail" src="{{ post.header_image.url }}"></a>
 
     - {{ post.author.first_name }}
     {{ post.author.last_name }} -
@@ -25,9 +28,9 @@
         {% endif %}
 
     </small>
-    <br />
+    <br>
 
-    {{ post.description|slice:":150"|safe }} </li>
+    <!-- {{ post.description|slice:":150"|safe }} </li> -->
 
     {% endfor %}
 </ul>
@@ -37,5 +40,7 @@
 <h2>No entries yet...</h2>
 
 {% endif %}
+<br>
+<a href="#top" id="back-to-top" class="btn btn-secondary">Back to Top</a>
 
 {% endblock %}

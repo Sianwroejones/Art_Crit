@@ -36,7 +36,7 @@
         {% if not post.comments.all %}
         <p>No Feedback Yet...</p>
         {% else %}
-        <a href="{% url 'add_comment' post.pk %}">Add Feedback</a>
+        <!-- <a href="{% url 'add_comment' post.pk %}">Add Feedback</a> -->
         <br><br>
 
         {% for comment in post.comments.all %}
@@ -51,8 +51,8 @@
 
         <br><br>
         
-        <a href="{% url 'add_comment' post.pk %}">Add Feedback</a>
-        <a href="#top" id="back-to-top">Back to Top</a>
+        <a href="{% url 'add_comment' post.pk %}" class="btn btn-secondary" >Add Feedback</a>
+        <!-- <a href="#top" id="back-to-top">Back to Top</a> -->
         <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
 
     </div>
