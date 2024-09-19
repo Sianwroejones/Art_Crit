@@ -48,14 +48,15 @@ body {
 .thumbnail {
     width: 300px;
     height: 300px;
+    max-height: 200px;
     overflow: hidden;
     object-fit: cover;
     margin: 10px;
     border: 1px solid #fefefe;
-    
     border-radius: 4px;
     padding: 5px;
 }
+
 
 /* Post Detail */
 .enlarged {
@@ -111,6 +112,18 @@ body {
     border: none; /* Remove border */   
 }
 
+/*-------------------- footer */
+
+footer {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #e9527f; 
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
 /*-----------------------------------------------media query ipad*/
 
 @media only screen and (max-width: 991px){
@@ -125,6 +138,9 @@ body {
     }
     
 }
+
+
+/*--------------------------------- footer ------------*/
 
 /*-----------------------------------------------media query ipad*/
 
