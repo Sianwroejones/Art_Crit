@@ -48,13 +48,17 @@ body {
 .thumbnail {
     width: 300px;
     height: 300px;
+    max-height: 200px;
     overflow: hidden;
     object-fit: cover;
     margin: 10px;
     border: 1px solid #fefefe;
-    
     border-radius: 4px;
     padding: 5px;
+}
+
+.container {
+    min-height: 3000px;
 }
 
 /* Post Detail */
