@@ -57,9 +57,6 @@ body {
     padding: 5px;
 }
 
-.container {
-    min-height: 3000px;
-}
 
 /* Post Detail */
 .enlarged {
@@ -115,6 +112,18 @@ body {
     border: none; /* Remove border */   
 }
 
+/*-------------------- footer */
+
+footer {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Dark grey text color */
+    text-align: center;
+    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
 /*-----------------------------------------------media query ipad*/
 
 @media only screen and (max-width: 991px){
@@ -129,6 +138,9 @@ body {
     }
     
 }
+
+
+/*--------------------------------- footer ------------*/
 
 /*-----------------------------------------------media query ipad*/
 
