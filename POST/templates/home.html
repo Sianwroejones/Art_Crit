@@ -39,23 +39,14 @@
                     {% endif %}
 
                     <p>
-                        <button type="button" class="btn btn-light" 
-        onclick="window.location.href='{% url 'medium' post.medium %}'">
-    {{ post.medium }}
-</button>
-                        - {{ post.author.first_name }} {{ post.author.last_name }} 
+                        <button type="button" class="btn btn-light"
+                            onclick="window.location.href='{% url 'medium' post.medium %}'">
+                            {{ post.medium }}
+                        </button>
+                        - {{ post.author.first_name }} {{ post.author.last_name }}
                         <br>
                         - {{ post.post_date }}
-                    </p>
-
-                   <!-- <small>
-                        {% if user.is_authenticated %}
-                        {% if user.id == post.author.id %}
-                        - <a href="{% url 'update_post' post.pk %}">(Edit)</a>
-                        <a href="{% url 'delete_post' post.pk %}">(Delete)</a>
-                        {% endif %}
-                        {% endif %}
-                    </small> -->
+                        </p>
 
                 </div>
             </div>
