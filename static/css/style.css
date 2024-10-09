@@ -1,5 +1,7 @@
+
+/* -------------------Images -------------------------------*/
 .content {
-    flex: 1; 
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,43 +10,42 @@
 .content img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
-/* navbar */
+/*--------------- navbar -----------------------------------*/
 body {
-    background-color: #f8eff4; /* Pink background color */
+    background-color: #f8eff4;
     color: rgb(147, 125, 125);
 }
 
-/* Google fonts */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+/* -------------------Google fonts -------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
 }
 
-p { 
-font-family: "Playfair Display", serif;
-font-optical-sizing: auto;
-font-weight: weight;
-font-style: normal;
-} 
-
-body { 
+p {
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
-    } 
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+}
 
 
 .justified {
     text-align: justify;
 }
 
-/* Homepage */
+/* ------------------------Homepage -------------------------- */
 .thumbnail {
     width: 300px;
     height: 300px;
@@ -104,81 +105,87 @@ body {
     margin-top: 10px;
 }
 
-/* Mediums detail */
+/*--------------------Mediums detail ---------------------*/
 
 .thumbnail-link {
-    text-decoration: none; /* Remove underline */
-    outline: none; /* Remove outline */
-    border: none; /* Remove border */   
+    text-decoration: none;
+    /* Remove underline */
+    outline: none;
+    /* Remove outline */
+    border: none;
+    /* Remove border */
 }
 
-/*-------------------- footer */
+/*-------------------- footer ----------------------------*/
 
-footer {
-    background-color: #f8f9fa; /* Light grey background */
-    color: #e9527f; 
+.sticky {
+    background-color: #f8f9fa;
+    color: #e9527f;
     text-align: center;
     padding: 1rem;
-    position: relative;
     bottom: 0;
     width: 100%;
-  }
+    position: fixed;
+    bottom: 0;
+}
 
-/*-----------------------------------------------media query ipad*/
+/*-----------------------------------------------media queryies */
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px) {
     .social-icons {
         display: flex;
         justify-content: center;
         margin-right: 0;
     }
+
     .social-icons a {
         font-size: 24px;
         margin: 0 10px;
     }
-    
+
 }
 
 
-/*--------------------------------- footer ------------*/
-
-/*-----------------------------------------------media query ipad*/
-
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px) {
     .social-icons {
         display: flex;
         justify-content: center;
         margin-right: 0;
     }
+
     .social-icons a {
         font-size: 24px;
         margin: 0 10px;
     }
-    
+
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     .col-md-4 {
         width: 100%;
         margin-right: 0;
-    }  
+    }
 }
 
 /*-----------------------------------------------media gallery page */
- 
-@media only screen and (max-width: 767px){
+
+@media only screen and (max-width: 767px) {
     .row {
         flex-wrap: wrap;
     }
+
     .col {
         flex: 0 0 100%;
-        max-width:100%;
+        max-width: 100%;
     }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
-    .social-icons{
+    .social-icons {
         display: flex;
         justify-content: center;
     }
+
     .social-icons {
         margin: 0 100px;
     }

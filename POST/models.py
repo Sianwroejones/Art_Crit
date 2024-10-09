@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.urls import reverse 
+from django.urls import reverse
 from datetime import datetime, date
 from ckeditor.fields import RichTextField
 from cloudinary.models import CloudinaryField
@@ -10,10 +10,10 @@ class Medium(models.Model):
     type = models.CharField(max_length=255, default='Untitled')
 
     def __str__(self):
-        return self.type 
+        return self.type
 
-    def get_absolute_url(self): 
-        return reverse('home') 
+    def get_absolute_url(self):
+        return reverse('home')
 
 
 class Post(models.Model):
@@ -27,17 +27,19 @@ class Post(models.Model):
     modified = models.DateTimeField(auto_now=True)
     post_date = models.DateField(auto_now_add=True)
     medium = models.CharField(max_length=255, default='uncategorised')
-   
 
-    def __str__(self):
-        return self.description + '|' + str(self.author)
 
-def get_absolute_url(self): 
-       return reverse('home') 
+def __str__(self):
+    return self.description + '|' + str(self.author)
+
+
+def get_absolute_url(self):
+    return reverse('home')
 
 
 class Comment(models.Model):
-    post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
+    post = models.ForeignKey(
+        Post, related_name="comments", on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
     body = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)

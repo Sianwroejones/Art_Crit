@@ -5,16 +5,17 @@
 {% if user.is_authenticated %}
 <br>
 <h1>Add Art Post</h1>
-<br /><br />
+<br><br>
 <div class="mb-3">
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.media }}
         {{ form.as_p }}
         <button class="btn btn-secondary">Share</button>
+    </form>    
 </div>
 
-</form>
+
 
 <script>
     let name = "{{ user.id }}";
