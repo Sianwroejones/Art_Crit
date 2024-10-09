@@ -171,7 +171,7 @@ The site is responsive and looks good on different screen sizes. I used the dev 
 
 Testing Testing Testing
 
-While I have tried fixing these error messages to the best of my ability, some still remain. They appear to mostly be trivial things
+While I have tried fixing these error messages to the best of my ability, some still remain. They appear to mostly be trivial things. I changed a couple of the suggested errors and it completely changed the structure of my page, so those ones I had to leave.
 
 Python:
 
