@@ -6,11 +6,11 @@
 <main>
     <div class="col-12 g-0 bg-colour text-center">
         <div class="row bg-color-exhibiting">
-            <strong>
+            
                 <br>
-                <h1>W e l c o m e&nbsp;&nbsp;&nbsp;T o&nbsp;&nbsp;&nbsp;A r t &nbsp;&nbsp;&nbsp;C r i t </h1>
+                <h1><strong>W e l c o m e&nbsp;&nbsp;&nbsp;T o&nbsp;&nbsp;&nbsp;A r t &nbsp;&nbsp;&nbsp;C r i t </strong></h1>
                 <br>
-            </strong>
+            
             <p class="justified">ArtCrit Community is a vibrant online platform where artists of all levels come
                 together to share their work and receive constructive feedback. Members can post their artwork, engage
                 in thoughtful discussions, and gain insights from a supportive community of peers and experts. With
@@ -20,7 +20,7 @@
                 perspectives, ArtCrit Community is your go-to space for artistic development and inspiration.</p>
         </div>
     </div>
-    </br>
+    <br>
     <div class="container text-center">
         <div class="row justify-content-center">
             {% for post in object_list %}
@@ -36,7 +36,7 @@
                     {% endif %}                     
                     {% if post.header_image %}
                     <a href="{% url 'details' post.pk %}">
-                        <img class="thumbnail" src="{{ post.header_image.url }}"></a>
+                        <img class="thumbnail" src="{{ post.header_image.url }}" alt="artwork"></a>
                     {% endif %}
 
                     <p>
