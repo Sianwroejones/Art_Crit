@@ -154,7 +154,18 @@ Validation
 
 Responsiveness:
 
-The site is responsive and looks good on different screen sizes. 
+The site is responsive and looks good on different screen sizes. I used the dev tools on chrome to test the website for responsiveness. I captured screenshots to demonstrate responsive design across mobile, tablet and laptop based on the size configurations preset in dev tools.
+
+<img width="1433" alt="Screenshot 2024-10-09 at 12 05 43" src="https://github.com/user-attachments/assets/203df2ee-b983-42b6-9444-fae25292db92">
+
+
+
+<img width="977" alt="Screenshot 2024-10-09 at 12 06 04" src="https://github.com/user-attachments/assets/924c130e-2657-4a00-8f06-0d44c453006a">
+
+
+
+<img width="514" alt="Screenshot 2024-10-09 at 12 06 51" src="https://github.com/user-attachments/assets/66a989fa-335f-49a7-8b49-daf727204160">
+
 
 
 
@@ -237,7 +248,105 @@ Lighthouse Audit:
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/a4b48a7e-e7b0-43c9-997b-e754b17ef9e0">
 
 
- 
+ Testing and Validation
+I used the W3 HTML Validator to check the HTML on each of my site pages by Direct Input. I have resolved the necessary errors (extra tags and correcting how width is set in an img tag). However there are some error messages remaning which are due to the content being created using Django Summernote editor in the admin panel.
+
+I used the W3 CSS Validator to check my CSS script by Direct Input. I found no errors! There are 5 warnigns which are just flagging vendor extensions.
+
+CSS validation results
+
+I used the CI Python Linter to check all my python scripts. I found a few small errors like the below - mostly lines were too long or there was a missing blank space line. I have left some of the error messages as they are related to a too long line at the result of a comment.
+Python Linter Result
+
+I also used the Django automated testing within my Gitpod workspace.
+
+Manual Testing Results
+
+SPLASH PAGE
+
+A clickable animation that leads you to the homepage: Pass
+
+HOME PAGE
+
+Test	Result
+
+Posts displayed as thumbnails:	Pass
+
+Ability to click on thumbnails:	Pass
+
+Commenting functionality:	Pass
+
+Edit and delete comment functionality:	Pass
+
+User must be logged in to comment/edit/delete:	Pass
+
+User must be logged in to delete blog post:	Pass
+User cannot delete/edit others' comments:	Pass
+
+Prevention of deleting other users' posts:	Pass
+
+Prevention of posting as other users:	Pass
+
+DETAILS PAGE
+
+Test	Result
+
+Overview of Artwork and original sized image:	Pass
+
+Feedback form functionality:	Pass
+
+Accessible without login:	Pass
+
+FOOTER/NAV BAR
+
+Test	Result
+
+Navigation links functionality:	Pass
+
+Social media links functionality:	Pass
+
+Mediums dropdown menu functionality: Pass
+
+PROFILE PAGE
+
+Test	Result
+
+Access to edit or post requires login:	Pass
+
+Edit form functionality:	Pass
+
+Post creation functionality:	Pass
+
+Redirect after post submission:	Pass
+
+LOGIN PAGE
+
+Test	Result
+
+Secure signup functionality:	Pass
+
+Redirect after successful login:	Pass
+
+REGISTRATION PAGE
+
+Test	Result
+
+Secure login functionality:	Pass
+
+Redirect after successful registration:	Pass
+
+LOGOUT PAGE
+
+Test	Result
+
+Logout functionality:	Pass
+
+Redirect after successful logout:	Pass
+
+
+
+Back to Top
+
 
 
 Tools and technologies used:
