@@ -17,7 +17,14 @@ urlpatterns = [
         UpdatePostView.as_view(),
         name='update_post'
     ),
-    path('details/<int:pk>/delete', DeletePostView.as_view(), name='delete_post'), 
+    path(
+        'details/<int:pk>/delete',
+        DeletePostView.as_view(),
+        name='delete_post'
+    ),
     path('medium/<str:meds>/', MediumView, name='medium'),
-    path('details/<int:pk>/comment/', AddCommentView.as_view(), name='add_comment'),
+    path(
+        'details/<int:pk>/comment/',
+        AddCommentView.as_view(),
+        name='add_comment'),
 ]
