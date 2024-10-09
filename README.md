@@ -171,7 +171,7 @@ The site is responsive and looks good on different screen sizes. I used the dev 
 
 Testing Testing Testing
 
-I have tried fixing these error messages to the best of my ability, but some still remain.
+While I have tried fixing these error messages to the best of my ability, some still remain. They appear to mostly be trivial things
 
 Python:
 
@@ -402,6 +402,8 @@ The images are some of my own artwork and others are of friends’ work and goog
 
 Wireframes were made using balsamiq
 
+I looked at Katie Coughlan's ReadMe for good testing examples
+
 
 
 Some extra notes
@@ -410,9 +412,9 @@ Due to database issues, our cohort was given extra time to complete the project.
 
 I later discovered that it was bad developer practise to name my apps in capital letters. By the time I was privy to this information, I had already almost completed my project and would be too late to start again. The Django cheat sheet we were provided with was very misleading, where it says to set up the project apps, it has examples in capitals. This is very misleading. I know not to do this in future and will definitely not be doing this again.
 
-I encountered a big issue where my logout function had come up with an error. It was all working perfectly up until this point, the database went down again on the morning of submission, which took up crucial time. I would have liked to have had the time to be more thorough with validation. 
+I encountered a big issue where my logout function had come up with an error. It was all working perfectly up until this point, the database went down again on the morning of submission, which took up crucial time. I would have liked to have had the time to be more thorough with validation. - This has now been fixed.
 
-I had a problem with images for deployment, I had figured this out just at the end but it was too close to submission time
+I had a problem with images for deployment, I had figured this out just at the end but it was too close to submission time - This has now been fixed
 
 
 
