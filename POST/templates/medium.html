@@ -10,13 +10,14 @@
 <br> <br> 
 
 <ul>
+    <li>
     {% for post in medium_posts %}
     <!-- <a href="{% url 'details' post.pk %}"> -->
         <br> <br>
         <h2>{{ post.title }}</h2>
-    </a>
+   
 
-    <a href="{% url 'details' post.pk %}"><img class="thumbnail" src="{{ post.header_image.url }}"></a>
+    <a href="{% url 'details' post.pk %}"><img class="thumbnail" src="{{ post.header_image.url }}" alt="artwork"></a>
 
     - {{ post.author.first_name }}
     {{ post.author.last_name }} -
@@ -34,6 +35,7 @@
     <!-- {{ post.description|slice:":150"|safe }} </li> -->
 
     {% endfor %}
+</li>
 </ul>
 
 
