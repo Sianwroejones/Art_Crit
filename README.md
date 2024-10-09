@@ -171,6 +171,8 @@ The site is responsive and looks good on different screen sizes. I used the dev 
 
 Testing Testing Testing
 
+I have tried fixing these error messages to the best of my ability, but some still remain.
+
 Python:
 
 Settings ART_CRIT 
