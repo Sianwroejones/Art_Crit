@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
-    import env 
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,9 +27,13 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net','.herokuapp.com','8000-sianwroejones-artcrit-njbr4gaty1h.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = [
+    '8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net',
+    '.herokuapp.com',
+    '8000-sianwroejones-artcrit-njbr4gaty1h.ws.codeinstitute-ide.net'
+]
 
 
 # Application definition
@@ -42,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'POST',
-    'cloudinary_storage', 
+    'cloudinary_storage',
     'cloudinary',
     'SIGNUP',
     'ckeditor'
@@ -90,8 +94,10 @@ WSGI_APPLICATION = 'ART_CRIT.wsgi.application'
 #    }
 # }
 
-DATABASES = { 'default':
-dj_database_url.parse(os.environ.get("DATABASE_URL"))
+DATABASES = {
+    'default': dj_database_url.parse(
+        os.environ.get("DATABASE_URL")
+        )
 }
 
 # Password validation
@@ -99,16 +105,28 @@ dj_database_url.parse(os.environ.get("DATABASE_URL"))
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'UserAttributeSimilarityValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'MinimumLengthValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'CommonPasswordValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'NumericPasswordValidator'
+        ),
     },
 ]
 
@@ -146,7 +164,10 @@ CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net', 'https://8000-sianwroejones-artcrit-njbr4gaty1h.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-sianwroejones-artcrit-ymhmmovszvt.ws.codeinstitute-ide.net',
+    'https://8000-sianwroejones-artcrit-njbr4gaty1h.ws.codeinstitute-ide.net'
+]
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
