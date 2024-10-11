@@ -166,80 +166,51 @@ The site is responsive and looks good on different screen sizes. I used the dev 
 
 <img width="514" alt="Screenshot 2024-10-09 at 12 06 51" src="https://github.com/user-attachments/assets/66a989fa-335f-49a7-8b49-daf727204160">
 
+Validation Testing
+
+HTML Validation
+
+Templates/Homepage: Multiple errors upon first entry
+
+<img width="1359" alt="Screenshot 2024-10-09 at 16 34 27" src="https://github.com/user-attachments/assets/6f3e31c6-4e9f-480d-aaca-4f337595ef52">
+
+No errors after fixing:
+
+<img width="1431" alt="Screenshot 2024-10-09 at 18 11 04" src="https://github.com/user-attachments/assets/056e4dc3-33ba-4971-9a74-75a8076e7a40">
 
 
+Templates/Splashpage
 
-Testing Testing Testing
+No errors upon first entry:
 
-While I have tried fixing these error messages to the best of my ability, some still remain. They appear to mostly be trivial things. I changed a couple of the suggested errors and it completely changed the structure of my page, so those ones I had to leave.
+<img width="1103" alt="Screenshot 2024-10-11 at 15 31 14" src="https://github.com/user-attachments/assets/6cf826c0-e4a2-4a68-837c-fbbcb99a76da">
 
-Python:
+Templates/Mediums: Multiple errors upon first entry
 
-Settings ART_CRIT 
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/4e04ebf0-06f8-4272-bbf3-38c9872f93e6">
+<img width="1376" alt="Screenshot 2024-10-09 at 18 32 04" src="https://github.com/user-attachments/assets/a80bcaba-ec13-42c5-8e17-02455fc66977">
+
+No errors after fixing:
+
+<img width="1407" alt="Screenshot 2024-10-09 at 18 47 31" src="https://github.com/user-attachments/assets/363a1394-cf5d-4f00-8ff8-af35db14fed5">
+
+Templates/upload work: 
+There are 2 errors which have something to do with the rich text editor I have used. This is due to their template and something that i can't change:
+
+<img width="1085" alt="Screenshot 2024-10-11 at 15 38 28" src="https://github.com/user-attachments/assets/b0ca9d6a-122c-4bc8-a6dc-916973fa4153">
+
+Templates/Delete: No errors upon first entry 
+
+<img width="1097" alt="Screenshot 2024-10-11 at 15 51 51" src="https://github.com/user-attachments/assets/35a2355b-3331-480f-8517-ba421904a4e6">
+
+Templates/Update: Errors upon first entry
+
+<img width="1079" alt="Screenshot 2024-10-11 at 15 55 08" src="https://github.com/user-attachments/assets/56af437b-c92f-4702-8133-f4c9bd3b7c2d">
+
+Fixed all errors other than this one which is related to rich Text editor, therefor I can't ammend it.
+
+<img width="1102" alt="Screenshot 2024-10-11 at 15 58 47" src="https://github.com/user-attachments/assets/e96d7f10-052e-4b07-b1dd-22df7bd38247">
 
 
-urls ART_CRIT
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/5a6ed367-11ee-4caf-a62f-6050eb3727e2">
-
- 
-admin POST
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/dd415854-7ab7-42ec-a0c3-1b18690d9743">
-
- 
-forms POST
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/8aa7aedc-ed9b-452b-a303-e5358f0f1e03">
-
- 
-models POST
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/7dbf26ca-ed25-479d-b661-3e8e6bc5e645">
-
- 
-urls POST
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/cdb7be4f-0963-45af-8e2f-a8426da3c976">
-
-
-views POST
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/e377b8ec-8824-413f-8f7e-a4fd1f3cdf5c">
-
- 
-forms SIGNUP
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/dd5c157f-b080-44e3-9761-3ce2ab7ab31e">
-
- 
-urls SIGNUP
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/be18e337-25f2-4e80-90b7-be84bfde451c">
-
- 
-views SIGNUP
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/b891fd72-d3c1-45c5-b793-9953914efa6d">
-
- 
-
-Testing HTML
-
-home
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/e69c6385-9c95-410a-bdf0-cebaf2a081e5">
-
- 
-
-splash
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/70ca7a6d-19be-44a4-a9d4-d3f657159de5">
-
- 
-
-Register
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/70d33b23-23b1-4900-ad4b-d37bc206cec6">
-
- 
-
-login
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/67e3fae1-52b1-4513-aef6-f6dd5f372205">
-
- 
-
-css
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/efaa19f6-c543-4de5-bbc0-ecc4254ccf73">
 
 
  
