@@ -210,7 +210,30 @@ Fixed all errors other than this one which is related to rich Text editor, there
 
 <img width="1102" alt="Screenshot 2024-10-11 at 15 58 47" src="https://github.com/user-attachments/assets/e96d7f10-052e-4b07-b1dd-22df7bd38247">
 
+Templates/Login: multiple errors upon first entry
 
+<img width="1085" alt="Screenshot 2024-10-11 at 16 03 39" src="https://github.com/user-attachments/assets/33199643-c2b8-4075-857d-6d38688bcfc7">
+
+Fixed all errors:
+
+<img width="1092" alt="Screenshot 2024-10-11 at 16 12 25" src="https://github.com/user-attachments/assets/962816e2-8b22-45f6-a519-868a408909aa">
+
+Templates/details: No errors upon first entry:
+
+<img width="1092" alt="Screenshot 2024-10-11 at 16 15 00" src="https://github.com/user-attachments/assets/9a15bf41-b1be-491d-ac54-66f7172f1fbe">
+
+Templates/Registration: Multiple errors upon first entry
+
+<img width="1091" alt="Screenshot 2024-10-11 at 16 20 02" src="https://github.com/user-attachments/assets/1bc66e15-6fad-499e-990e-9b041fc50b18">
+
+I fixed all the errors that I could. The remaining arrors are related to the Rich Text Editor and are out of my control:
+
+<img width="1100" alt="Screenshot 2024-10-11 at 16 24 29" src="https://github.com/user-attachments/assets/da22bd48-8d94-4877-a526-f81595aa4bc1">
+
+
+Templates/Add Feedback: No errors upon first entry
+
+<img width="1083" alt="Screenshot 2024-10-11 at 16 27 55" src="https://github.com/user-attachments/assets/4ace24e2-6bc4-4801-89a0-2a131cbe6902">
 
 
  
